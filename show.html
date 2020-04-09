@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<p id="object1"><p/>
+	<a target="_blank"id="maps">link<a/>
+
+<script>const ideas = [
+    {
+        name: "the beach",
+        size: ["up to 5", "5-10", "10+"],
+        ages: [ "children", "9-13","14-17", "18+"],
+        tags: ["free", "birthday", "outside", "family"]
+    },
+    {
+        name: "basketball",
+        size: ["5-10", "10+"],
+        ages: ["9-13","14-17", "18+"],
+        tags: ["sport", "outside", "free", "family"]
+    },
+    {
+        name: "soccer",
+        size: ["5-10", "10+"],
+        ages: ["9-13","14-17", "18+"],
+        tags: ["free", "outside", "free", "family"]
+    },
+    {
+        name: "pool",
+        size: ["up to 5", "5-10", "10+"],
+        ages: ["children", "9-13","14-17"],
+        tags: ["birthday", "outside", "family"]
+    },
+    {
+        name: "ice skating",
+        size: ["up to 5", "5-10", "10+"],
+        ages: ["9-13","14-17", "18+"],
+        tags: ["birthday", "sport", "family"]
+    },
+    {
+        name: "bowling",
+        size: ["up to 5", "5-10", "10+"],
+        ages: ["9-13","14-17", "18+"],
+        tags: ["birthday", "sport", "family"]
+    },
+    {
+        name: "scuba diving",
+        size: ["up to 5"],
+        ages: ["9-13","14-17", "18+"],
+        tags: ["sport", "outside"]
+    },
+    {
+        name: "science experiments",
+        size: ["up to 5"],
+        ages: ["children", "9-13","14-17", "18+"],
+        tags: ["free", "family", "science"]
+    },
+    {
+        name: "laser tag",
+        size: ["5-10", "10+"],
+        ages: ["9-13","14-17", "18+"],
+        tags: ["birthday", "sport"]
+    },
+    {
+        name: "restaurant",
+        size: ["up to 5", "5-10", "10+"],
+        ages: ["children", "9-13","14-17", "18+"],
+        tags: ["family", "birthday"]
+    },
+    {
+        name: "picnic",
+        size: ["up to 5", "5-10", "10+" ],
+        ages: ["children", "9-13","14-17", "18+"],
+        tags: ["family", "birthday", "free", "outside"]
+    },
+    {
+        name: "amusement park",
+        size: ["up to 5", "5-10"],
+        ages: ["children", "9-13","14-17", "18+"],
+        tags: ["family", "outside", "birthday"]
+    },
+    {
+        name: "camping",
+        size: ["up to 5", "5-10", "10+"],
+        ages: ["9-13","14-17", "18+"],
+        tags: ["sport", "outside"]
+    },
+    {
+        name: "movie",
+        size: ["up to 5", "5-10"],
+        ages: ["children", "9-13","14-17", "18+"],
+        tags: ["family"]
+    },
+    {
+        name: "paintball",
+        size: ["up to 5", "5-10", "10+"],
+        ages: ["9-13","14-17", "18+"],
+        tags: ["sport", "birthday"]
+    },
+    {
+        name: "trampoline park",
+        size: ["up to 5", "5-10", "10+"],
+        ages: ["children", "9-13","14-17"],
+        tags: ["family", "birthday", "sport"]
+    },
+    {
+        name: "club",
+        size: ["up to 5", "5-10"],
+        ages: ["18+"],
+        tags: ["outside"]
+    },
+    {
+        name: "bar",
+        size: ["up to 5", "5-10"],
+        ages: ["18+"],
+        tags: ["outside"]
+    },
+    {
+        name: "water park",
+        size: ["up to 5", "5-10", "10+"],
+        ages: ["children", "9-13","14-17", "18+"],
+        tags: []
+    },
+    {
+        name: "dessert workshop",
+        size: ["up to 5", "5-10", "10+"],
+        ages: ["children", "9-13","14-17", "18+"],
+        tags: []
+    },
+    {
+        name: "diving",
+        size: ["up to 5", "5-10", "10+"],
+        ages: ["9-13","14-17", "18+"],
+        tags: []
+    },
+    {
+        name: "ice cream",
+        size: ["up to 5", "5-10", "10+"],
+        ages: ["children", "9-13","14-17", "18+"],
+        tags: []
+    },
+    {
+        name: "escape room",
+        size: ["up to 5", "5-10"],
+        ages: ["14-17", "18+"],
+        tags: []
+    },
+    {
+        name: "pizza",
+        size: ["up to 5", "5-10", "10+"],
+        ages: ["children", "9-13","14-17", "18+"],
+        tags: []
+    },
+    {
+        name: "concert",
+        size: ["up to 5", "5-10"],
+        ages: ["18+"],
+        tags: []
+    },
+    {
+        name: "wall climbing",
+        size: ["up to 5", "5-10", "10+"],
+        ages: ["children", "9-13","14-17", "18+"],
+        tags: []
+    },
+    {
+        name: "hiking",
+        size: ["up to 5", "5-10", "10+"],
+        ages: ["9-13","14-17", "18+"],
+        tags: []
+    },
+    {
+        name: "karaoke",
+        size: ["up to 5", "5-10", "10+"],
+        ages: ["children", "9-13","14-17", "18+"],
+        tags: []
+    },
+    {
+        name: "shopping",
+        size: ["up to 5", "5-10", "10+"],
+        ages: ["children", "9-13","14-17", "18+"],
+        tags: ["outside","free","birthday","family"]
+    },
+    {
+        name: "ceramics-workshop",
+        size: ["up to 5", "5-10", "10+"],
+        ages: ["9-13","14-17", "18+"],
+        tags: ["outside","art","family"]
+    },
+    {
+        name: "hot-air-balloon",
+        size: ["up to 5"],
+        ages: ["14-17","18+"],
+        tags: ["outside","free","family"]
+    },
+    {
+        name: "horse-riding",
+        size: ["up to 5","5-10"],
+        ages: ["9-13","14-17","18+"],
+        tags: ["sport","outside","family",]
+    },
+    {
+        name: "zoo",
+        size: ["up to 5","5-10","10+"],
+        ages: ["children","9-13","14-17","18+"],
+        tags: ["outside","free","birthday","family"]
+    },
+    {
+        name: "game-night",
+        size: ["up to 5","5-10","10+"],
+        ages: ["children","9-13","14-17","18+"],
+        tags: ["free","birthday","family"]
+    },
+    {
+        name: "museum",
+        size: ["up to 5","5-10","10+"],
+        ages: ["children","9-13","14-17","18+"],
+        tags: ["outside","free","art","family"]
+    },
+    {
+        name: "baking-workshop",
+        size: ["up to 5","5-10"],
+        ages: ["children","9-13","14-17","18+"],
+        tags: ["birthdat","art","family"]
+    },
+    {
+        name: "skiing",
+        size: ["up to 5","5-10","10+"],
+        ages: ["9-13","14-17","18+"],
+        tags: ["sport","outside","free","family"]
+    },
+    {
+        name: "sunset-jeep-adventure",
+        size: ["up to 5","5-10"],
+        ages: ["9-13","14-17","18+"],
+        tags: ["sport","outside","free","family"]
+    },
+    {
+        name: "water-sports",
+        size: ["up yo 5","5-10","10+"],
+        ages: ["children","9-13","14-17","18+"],
+        tags: ["sport","outside","free","birthday","family"]
+    },{
+        name: "fishing",
+        size: ["up to 5","5-10"],
+        ages: ["14-17","18+"],
+        tags: ["sport","outside","free","family"]
+    },
+    {
+        name: "diving",
+        size: ["up to 5","5-10","10+"],
+        ages: ["14-17","18+"],
+        tags: ["sport","free","family","science"]
+
+    }];
+function getUrlVars() { 
+	var vars = {}; var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) { vars[key] = value; }); 
+	return vars; } 
+
+
+var obj = ideas[getUrlVars()["fits"]];
+console.log(obj);
+document.getElementById("object1").innerHTML=obj["name"]
+document.getElementById("maps").href=encodeURI("https://www.google.com/maps/search/?api=1&query="+obj["name"]+" near me");
+</script>
+
+
+</body>
+</html>

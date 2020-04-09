@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="design.css">
+
+	<title></title>
+</head>
+<body>
+	<div id="box">
+		<div id="up">
+			<h1> WhatToDo.com </h2>
+			<h3> Pick your group age and size, and the type of activity you'd want to get a list of fun activities that suit all your needs! </h3>
+		</div>
+		<form>
+			<select id="ages">
+				<option>children</option>
+				<option>9-13</option>
+				<option>14-17</option>
+				<option>18+</option>
+			</select>
+			<select id="size">
+				<option>up to 5</option>
+				<option>5-10</option>
+				<option>10+</option>
+			</select>
+		
+		<br style="margin: 20px">
+	    <input type="checkbox" id="sport">
+	    <label for="sport">sport</label> <br>
+	    <input type="checkbox" id="outside">
+	    <label for="outside">outside</label> <br>
+	    <input type="checkbox" id="free">
+	    <label for="free">free</label> <br>
+	    <input type="checkbox" id="birthday">
+	    <label for="birthday">birthday</label> <br>
+	    <input type="checkbox" id="art">
+	    <label for="art">art</label> <br>
+	    <input type="checkbox" id="family">
+	    <label for="family">family</label> <br>
+
+
+
+		<button type="button" onclick="search()" style="margin-top: 20px" >Click Me!</button>
+		<div id="results" style="margin-top: 30px"> </div>
+
+		</form>
+	</div>
+	<script src="functions.js"></script> 
+
+</body>
+</html>
+
